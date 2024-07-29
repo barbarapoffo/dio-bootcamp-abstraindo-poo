@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Bootcamp bootcamp = new Bootcamp("Bootcamp Java Developer");
+
+        Curso cursoJava = new Curso("Curso de Java", 40);
+        Mentoria mentoriaJava = new Mentoria("Mentoria de Java", LocalDate.of(2024, 8, 1));
+
+        bootcamp.adicionarCurso(cursoJava);
+        bootcamp.adicionarMentoria(mentoriaJava);
+
+        Dev dev1 = new Dev("Alice");
+        bootcamp.inscreverDev(dev1);
+
+        System.out.println(cursoJava.informacoes());
+        System.out.println(mentoriaJava.informacoes());
+        System.out.println(dev1.informacoes());
+    }
+}
